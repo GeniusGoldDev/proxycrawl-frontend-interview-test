@@ -1,0 +1,17 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type="text"] {
+  min-width: 650px;
+  min-height: 50px;
+  font-size: 13px;
+  border: 2px solid rgba(113,93,49,0.13);
+  border-radius: 4px;
+}
+input[type="text"]:focus {
+  outline: 2px solid #F7E594;
+}
+ul {
+  list-style-type: none;
+}

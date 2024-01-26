@@ -1,0 +1,42 @@
+@import "pages/index.scss";
+@import "pages/product.scss";
+* {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+.header, .footer {
+  background-color: #000000;
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+}
+.header {
+  font-size: 30px;
+}
+main {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  min-height: 500px;
+}
+.button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: 2px solid #F7E594;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #f5d670;
+  color: white;
+}
+.error {
+  color: #c35f44;
+}
