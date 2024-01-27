@@ -1,0 +1,29 @@
+extends partials/layout
+
+block vars
+  - const title = 'Amazon Crawl';
+  - const pageID = 'product';
+
+block eod
+  script
+    +loadModule('pages/product.js')
+
+block content
+  main
+    if error
+      div(class="error")
+        p Ups there is an error, try again
+        p= error
+        a(href="/" class="button") Try again
+    else
+      table
+        tr
+          td Product name:
+          td= product.name
+        tr
+          td Product price:
+          td= product.price
+        tr
+          td Product Info:
+          td= product.description
+      a(href="/" class="button") Try another product
